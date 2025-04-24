@@ -4,6 +4,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public static bool shopIsOpen = false;
 
     public int score = 0;
     public int money = 5;
@@ -16,16 +17,17 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject); // Keeps GameManager across scenes
         }
         else
         {
             Destroy(gameObject);
         }
     }
+
 
     void Start()
     {
@@ -34,6 +36,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.shopIsOpen) return;
+
         if (Input.GetMouseButtonDown(0))
         {
             TryDropBall();

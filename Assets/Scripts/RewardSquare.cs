@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class RewardSquare : MonoBehaviour
 {
-    public int moneyValue = 1; // Can be 0, 1, 5, 10
+    public int moneyValue = 1;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Ball"))
         {
-            // Give money
+            // Gives money
             GameManager.instance.AddMoney(moneyValue);
 
             // Gives score based on money value
