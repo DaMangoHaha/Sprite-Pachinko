@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject ballPrefab;
     public Transform ballSpawnHeight;
 
+
     void Awake()
     {
         if (instance == null)
@@ -32,7 +33,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         UpdateUI();
+
     }
+
 
     void Update()
     {
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Not enough money to drop a ball!");
             
         }
+
     }
 
     public void AddScore(int amount)
@@ -74,7 +78,7 @@ public class GameManager : MonoBehaviour
         UpdateUI();
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         scoreText.text = "Score: " + score;
         moneyText.text = "Money: $" + money;
