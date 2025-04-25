@@ -16,18 +16,21 @@ public class GameManager : MonoBehaviour
     public Transform ballSpawnHeight;
 
 
+    public static GameManager Instance { get; private set; }
+
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject); // Keeps GameManager across scenes
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
         }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
+
 
 
     void Start()
@@ -83,6 +86,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
         moneyText.text = "Money: $" + money;
     }
+    public int Score { get; set; }
 
 }
 

@@ -6,7 +6,6 @@ public class CameraSwitcher : MonoBehaviour
     public Transform shopViewPosition;
     public GameObject shopButton;
     public GameObject backButton;
-    [SerializeField] public GameObject prettyPrismsButton;
     
 
 
