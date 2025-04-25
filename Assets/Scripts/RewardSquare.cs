@@ -2,7 +2,14 @@ using UnityEngine;
 
 public class RewardSquare : MonoBehaviour
 {
-    public int moneyValue = 1;
+    public int moneyValue = 1;  // The money value of the RewardSquare (can be 0, 1, 5, 10, or -10)
+    public int expValue = 0;    // This will hold the EXP value based on the money value
+
+    private void Start()
+    {
+        // Assign EXP based on the money value
+        SetEXPValue();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,8 +38,37 @@ public class RewardSquare : MonoBehaviour
             }
             GameManager.instance.AddScore(scoreToAdd);
 
+            // Gives EXP based on the RewardSquare's EXP value
+            LevelManager.instance.AddEXP(expValue);
+
             // Destroys the ball
             Destroy(collision.gameObject);
+        }
+    }
+
+    // Assigns EXP based on the money value
+    private void SetEXPValue()
+    {
+        switch (moneyValue)
+        {
+            case 0:
+                expValue = 1;  // No money, but gives 1 EXP
+                break;
+            case 1:
+                expValue = 2;  // $1 square grants 2 EXP
+                break;
+            case 5:
+                expValue = 5;  // $5 square grants 5 EXP
+                break;
+            case 10:
+                expValue = 10; // $10 square grants 10 EXP
+                break;
+            case -10:
+                expValue = 0;  // Negative value square grants 0 EXP
+                break;
+            default:
+                expValue = 0;  // Default case if money value is not recognized
+                break;
         }
     }
 }

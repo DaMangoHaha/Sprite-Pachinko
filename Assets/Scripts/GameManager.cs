@@ -16,17 +16,15 @@ public class GameManager : MonoBehaviour
     public Transform ballSpawnHeight;
 
 
-    public static GameManager Instance { get; private set; }
-
     void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (instance != null && instance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            Instance = this;
+            instance = this;
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -64,7 +62,6 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("Not enough money to drop a ball!");
-            
         }
 
     }
@@ -86,7 +83,6 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
         moneyText.text = "Money: $" + money;
     }
-    public int Score { get; set; }
 
 }
 
