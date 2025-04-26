@@ -726,7 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855721788}
   m_Layer: 0
-  m_Name: PachinkPassView
+  m_Name: PachinkoPassView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
