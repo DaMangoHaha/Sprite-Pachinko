@@ -702,7 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   currentEXP: 0
-  expToNextLevel: 25
+  expToNextLevel: 50
   levelText: {fileID: 972251912}
   expText: {fileID: 254772433}
 --- !u!4 &630389115
@@ -2191,6 +2191,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1697070050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697070052}
+  - component: {fileID: 1697070051}
+  m_Layer: 0
+  m_Name: BallManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1697070051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697070050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1a63c2fae8c174db04c31363a4d2c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balls:
+  - {fileID: 960472544506767552, guid: a38e56f79e1173a43a9022c1973488b4, type: 3}
+  - {fileID: 4767730094844642223, guid: a53bbcfbdd4df9f469f8b883256bf750, type: 3}
+  - {fileID: 6779262042395704440, guid: 3af44bfef4eaa354c984eaca52e99fef, type: 3}
+  - {fileID: -9004949202099220158, guid: 61dcef55ca72cfe4883bff37f5139a60, type: 3}
+  - {fileID: -7155230159364851882, guid: 58ed286f04b4ad544a3a6a2b43ab61d8, type: 3}
+  - {fileID: 4958939647656230469, guid: 75a5f23b73652424d93db3bc4176b23f, type: 3}
+  - {fileID: -6825806079673721813, guid: 77c750443e383d9409def878b3c96c1c, type: 3}
+  currentBall: {fileID: 2424541640853796967, guid: d3da5dd9d1f6ae04ca9daee500ef7432, type: 3}
+--- !u!4 &1697070052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697070050}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.21213982, y: -0.017127285, z: 0.016821023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1772312108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3235,6 +3288,7 @@ SceneRoots:
   - {fileID: 305319603}
   - {fileID: 222847623}
   - {fileID: 630389115}
+  - {fileID: 1697070052}
   - {fileID: 1843736942}
   - {fileID: 1509543213}
   - {fileID: 1683419378}
