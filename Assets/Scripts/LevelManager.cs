@@ -60,5 +60,41 @@ public class LevelManager : MonoBehaviour
         levelText.text = "Level: " + level;
         expText.text = "EXP: " + currentEXP + "/" + expToNextLevel;
     }
+    private void HandleLevelUp()
+    {
+        level++;
+
+        // Equip ball at specific levels
+        switch (level)
+        {
+            case 2:
+                BallManager.instance.SetCurrentBall(0); // Red
+                break;
+            case 4:
+                BallManager.instance.SetCurrentBall(1); // Orange
+                break;
+            case 6:
+                BallManager.instance.SetCurrentBall(2); // Yellow
+                break;
+            case 8:
+                BallManager.instance.SetCurrentBall(3); // Green
+                break;
+            case 10:
+                BallManager.instance.SetCurrentBall(4); // Blue
+                break;
+            case 12:
+                BallManager.instance.SetCurrentBall(5); // Indigo
+                break;
+            case 14:
+                BallManager.instance.SetCurrentBall(6); // Violet
+                break;
+            case 16:
+                BallManager.instance.SetCurrentBall(7); // Gold
+                break;
+        }
+
+        Debug.Log("Player leveled up to " + level);
+    }
+
 }
 

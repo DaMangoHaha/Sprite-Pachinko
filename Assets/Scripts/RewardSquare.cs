@@ -38,16 +38,26 @@ public class RewardSquare : MonoBehaviour
             }
             GameManager.instance.AddScore(scoreToAdd);
 
-            // Gives EXP based on the RewardSquare's EXP value
-            LevelManager.instance.AddEXP(expValue);
+            if (collision.CompareTag("Ball"))
+                {
+                    BallData equippedBall = BallManager.instance.currentBall;
 
-            // Destroys the ball
-            Destroy(collision.gameObject);
+                    // Calculate final money and EXP earned using multipliers
+                    float moneyEarned = moneyValue * (equippedBall != null ? equippedBall.moneyMultiplier : 1f);
+                    float expEarned = expValue * (equippedBall != null ? equippedBall.expMultiplier : 1f);
+
+                    // Add money and score
+                    GameManager.instance.AddMoney(Mathf.RoundToInt(moneyEarned));
+                    GameManager.instance.AddScore(Mathf.RoundToInt(expEarned));
+
+                    Destroy(collision.gameObject);
+                }
+            }
+
         }
-    }
 
-    // Assigns EXP based on the money value
-    private void SetEXPValue()
+        // Assigns EXP based on the money value
+        private void SetEXPValue()
     {
         switch (moneyValue)
         {
