@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 440953155940432568}
   - component: {fileID: 8835088767099453813}
   - component: {fileID: 1209668770125929613}
-  - component: {fileID: 4767730094844642223}
+  - component: {fileID: 1447866406976630769}
+  - component: {fileID: 1115876675353916321}
   m_Layer: 0
   m_Name: Ball_Orange
   m_TagString: Ball
@@ -153,7 +154,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &4767730094844642223
+--- !u!114 &1447866406976630769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031399572105978406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7938d62ccf447f14184849ad99a21944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballData: {fileID: 1115876675353916321}
+--- !u!114 &1115876675353916321
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballName: Orange Ball
-  moneyMultiplier: 1.2
-  expMultiplier: 1.2
+  cost: 400
+  moneyMultiplier: 1.4
+  expMultiplier: 1
   ballPrefab: {fileID: 9031399572105978406}

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7448222270493400274}
   - component: {fileID: 6177809351570907100}
   - component: {fileID: 4475680607498656721}
-  - component: {fileID: -6825806079673721813}
   m_Layer: 0
   m_Name: Ball_Violet
   m_TagString: Ball
@@ -153,19 +152,3 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &-6825806079673721813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4295906356028280173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a52a07b8176f14e890015d608aee56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballName: Purple Ball
-  moneyMultiplier: 1.7
-  expMultiplier: 1.7
-  ballPrefab: {fileID: 4295906356028280173}

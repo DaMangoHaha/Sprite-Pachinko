@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5075552988126092347}
   - component: {fileID: 8680716904947703174}
   - component: {fileID: 7102398692538158550}
-  - component: {fileID: -7155230159364851882}
+  - component: {fileID: 8541916542806058548}
+  - component: {fileID: 5309114156820849165}
   m_Layer: 0
   m_Name: Ball_Blue
   m_TagString: Ball
@@ -153,7 +154,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &-7155230159364851882
+--- !u!114 &8541916542806058548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966089027734074312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7938d62ccf447f14184849ad99a21944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballData: {fileID: 5309114156820849165}
+--- !u!114 &5309114156820849165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballName: Blue Ball
-  moneyMultiplier: 1.5
+  cost: 1500
+  moneyMultiplier: 2.3
   expMultiplier: 1.5
   ballPrefab: {fileID: 2966089027734074312}

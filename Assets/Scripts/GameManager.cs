@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject ballPrefab;
     public Transform ballSpawnHeight;
+    public float spawnCooldown = 1f; // Time (in seconds) between ball spawns
+    private float lastSpawnTime = -999f;
+
 
 
     void Awake()
@@ -41,11 +44,14 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (GameManager.shopIsOpen) return;
-
-        if (Input.GetMouseButtonDown(0))
         {
-            TryDropBall();
+            if (Input.GetMouseButtonDown(0) && Time.time >= lastSpawnTime + spawnCooldown)
+            {
+                TryDropBall();
+                lastSpawnTime = Time.time;
+            }
         }
+
     }
 
     void TryDropBall()
@@ -55,7 +61,12 @@ public class GameManager : MonoBehaviour
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             worldPos = new Vector3(worldPos.x, ballSpawnHeight.position.y, 0);
 
-            Instantiate(ballPrefab, worldPos, Quaternion.identity);
+            // Use equipped ball if available
+            GameObject prefabToSpawn = BallManager.instance.currentBall != null
+                ? BallManager.instance.currentBall.prefab
+                : ballPrefab;
+
+            Instantiate(prefabToSpawn, worldPos, Quaternion.identity);
             money -= 1;
             UpdateUI();
         }
@@ -63,8 +74,8 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Not enough money to drop a ball!");
         }
-
     }
+
 
     public void AddScore(int amount)
     {

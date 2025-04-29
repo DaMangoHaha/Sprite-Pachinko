@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class RewardSquare : MonoBehaviour
 {
-    public int moneyValue = 1;  // The money value of the RewardSquare (can be 0, 1, 5, 10, or -10)
-    public int expValue = 0;    // This will hold the EXP value based on the money value
+    public int moneyValue = 1;
+    public int expValue = 0;
 
     private void Start()
     {
-        // Assign EXP based on the money value
         SetEXPValue();
     }
 
@@ -15,10 +14,22 @@ public class RewardSquare : MonoBehaviour
     {
         if (collision.CompareTag("Ball"))
         {
-            // Gives money
-            GameManager.instance.AddMoney(moneyValue);
+            // Try to get the BallBehavior component
+            BallBehavior ball = collision.GetComponent<BallBehavior>();
+            float moneyMultiplier = 1f;
+            float expMultiplier = 1f;
 
-            // Gives score based on money value
+            if (ball != null && ball.ballData != null)
+            {
+                moneyMultiplier = ball.ballData.moneyMultiplier;
+                expMultiplier = ball.ballData.expMultiplier;
+            }
+
+            // Apply money multiplier
+            float totalMoney = moneyValue * moneyMultiplier;
+            GameManager.instance.AddMoney(Mathf.RoundToInt(totalMoney));
+
+            // Apply score (unchanged logic)
             int scoreToAdd = 0;
             switch (moneyValue)
             {
@@ -38,47 +49,38 @@ public class RewardSquare : MonoBehaviour
             }
             GameManager.instance.AddScore(scoreToAdd);
 
-            if (collision.CompareTag("Ball"))
-                {
-                    BallData equippedBall = BallManager.instance.currentBall;
+            // Apply EXP multiplier
+            float totalEXP = expValue * expMultiplier;
+            LevelManager.instance.AddEXP(Mathf.RoundToInt(totalEXP));
 
-                    // Calculate final money and EXP earned using multipliers
-                    float moneyEarned = moneyValue * (equippedBall != null ? equippedBall.moneyMultiplier : 1f);
-                    float expEarned = expValue * (equippedBall != null ? equippedBall.expMultiplier : 1f);
-
-                    // Add money and score
-                    GameManager.instance.AddMoney(Mathf.RoundToInt(moneyEarned));
-                    GameManager.instance.AddScore(Mathf.RoundToInt(expEarned));
-
-                    Destroy(collision.gameObject);
-                }
-            }
-
+            // Destroy the ball
+            Destroy(collision.gameObject);
         }
+    }
 
-        // Assigns EXP based on the money value
-        private void SetEXPValue()
+    private void SetEXPValue()
     {
         switch (moneyValue)
         {
             case 0:
-                expValue = 1;  // No money, but gives 1 EXP
+                expValue = 1;
                 break;
             case 1:
-                expValue = 2;  // $1 square grants 2 EXP
+                expValue = 2;
                 break;
             case 5:
-                expValue = 5;  // $5 square grants 5 EXP
+                expValue = 5;
                 break;
             case 10:
-                expValue = 10; // $10 square grants 10 EXP
+                expValue = 10;
                 break;
             case -10:
-                expValue = 0;  // Negative value square grants 0 EXP
+                expValue = 0;
                 break;
             default:
-                expValue = 0;  // Default case if money value is not recognized
+                expValue = 0;
                 break;
         }
     }
 }
+

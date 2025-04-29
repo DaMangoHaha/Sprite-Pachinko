@@ -1,28 +1,79 @@
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallManager : MonoBehaviour
 {
     public static BallManager instance;
 
-    public List<BallData> balls = new List<BallData>();
-    public BallData currentBall;
+    [Header("Currently Equipped Ball")]
+    public EquippedBallData currentBall;
+
+    private bool redBallPurchased = false;
+
+    public Button buyRedBallButton;
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else
+        // Singleton pattern to ensure only one BallManager exists
+        if (instance != null && instance != this)
+        {
             Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
-    public void SetCurrentBall(int index)
+    public bool TryPurchaseRedBall(EquippedBallData redBallData, int cost)
     {
-        if (index >= 0 && index < balls.Count)
+        if (redBallPurchased)
         {
-            currentBall = balls[index];
-            Debug.Log("Equipped Ball: " + currentBall.ballName);
+            Debug.Log("Red Ball already purchased!");
+            return false;
+        }
+
+        if (GameManager.instance.money >= cost)
+        {
+            // Purchase the Red Ball
+            GameManager.instance.money -= cost;
+            GameManager.instance.UpdateUI();
+
+            // Equip the new ball
+            currentBall = redBallData;
+            redBallPurchased = true;
+
+            Debug.Log("Red Ball purchased and equipped!");
+
+            // Gray out the purchase button
+            GrayOutPurchaseButton();
+
+            return true;
+        }
+
+        Debug.Log("Not enough money to purchase Red Ball.");
+        return false;
+    }
+
+    private void GrayOutPurchaseButton()
+    {
+        if (buyRedBallButton != null)
+        {
+            buyRedBallButton.interactable = false; // Disable the button
+            ColorBlock colors = buyRedBallButton.colors;
+            colors.normalColor = Color.gray; // Set color to gray
+            buyRedBallButton.colors = colors;
         }
     }
 }
+
+[System.Serializable]
+public class EquippedBallData
+{
+    public GameObject prefab;
+    public float moneyMultiplier = 1f;
+}
+
+
 

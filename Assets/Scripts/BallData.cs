@@ -1,11 +1,11 @@
 using UnityEngine;
 
-[System.Serializable]
 public class BallData : MonoBehaviour
 {
-    public string ballName;
-    public float moneyMultiplier;
-    public float expMultiplier;
-    public GameObject ballPrefab; // I already have these...so...
+    public string ballName = "Red Ball";
+    public int cost = 150;
+    public float moneyMultiplier = 1.1f;
+    public float expMultiplier = 1f;
+    public GameObject ballPrefab;
 }
 
