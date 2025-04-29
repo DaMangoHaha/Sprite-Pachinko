@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,9 +37,18 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        UpdateUI();
+        int savedMoney, savedScore;
+        string equippedBall;
+        SaveManager.LoadProgress(out savedMoney, out savedScore, out equippedBall);
 
+        money = savedMoney;
+        score = savedScore;
+
+        BallManager.instance.EquipBallByName(equippedBall); // You'll implement this in BallManager
+
+        UpdateUI();
     }
+
 
 
     void Update()
@@ -68,6 +78,7 @@ public class GameManager : MonoBehaviour
 
             Instantiate(prefabToSpawn, worldPos, Quaternion.identity);
             money -= 1;
+            SaveManager.SaveProgress(money, score, BallManager.instance.currentBall.ballName);
             UpdateUI();
         }
         else
@@ -80,14 +91,17 @@ public class GameManager : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
+        SaveManager.SaveProgress(money, score, BallManager.instance.currentBall.ballName);
         UpdateUI();
     }
 
     public void AddMoney(int amount)
     {
         money += amount;
+        SaveManager.SaveProgress(money, score, BallManager.instance.currentBall.ballName);
         UpdateUI();
     }
+
 
     public void UpdateUI()
     {

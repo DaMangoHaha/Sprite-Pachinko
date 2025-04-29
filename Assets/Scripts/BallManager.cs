@@ -66,11 +66,26 @@ public class BallManager : MonoBehaviour
             buyRedBallButton.colors = colors;
         }
     }
+    public EquippedBallData[] allAvailableBalls; // Assign in Inspector
+
+    public void EquipBallByName(string ballName)
+    {
+        foreach (EquippedBallData ball in allAvailableBalls)
+        {
+            if (ball.ballName == ballName)
+            {
+                currentBall = ball;
+                break;
+            }
+        }
+    }
+
 }
 
 [System.Serializable]
 public class EquippedBallData
 {
+    public string ballName;
     public GameObject prefab;
     public float moneyMultiplier = 1f;
 }
