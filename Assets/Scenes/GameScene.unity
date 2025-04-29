@@ -390,6 +390,10 @@ PrefabInstance:
       propertyPath: expValue
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 495131284177272049, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
+      propertyPath: moneyValue
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
       value: RewardSquare 1
@@ -3381,7 +3385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495131284177272049, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: moneyValue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
@@ -6551,7 +6555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentBall:
-    ballName: 
+    ballName: Pachinko Ball
     prefab: {fileID: 4999086322203947618, guid: d3da5dd9d1f6ae04ca9daee500ef7432, type: 3}
     moneyMultiplier: 1
   buyRedBallButton: {fileID: 0}
@@ -6621,6 +6625,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495131284177272049, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: expValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 495131284177272049, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
+      propertyPath: moneyValue
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
@@ -7350,7 +7358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  money: 20
+  money: 5
   scoreText: {fileID: 1046974250}
   moneyText: {fileID: 1650029930}
   ballPrefab: {fileID: 4999086322203947618, guid: d3da5dd9d1f6ae04ca9daee500ef7432, type: 3}
@@ -7546,7 +7554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495131284177272049, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: moneyValue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
