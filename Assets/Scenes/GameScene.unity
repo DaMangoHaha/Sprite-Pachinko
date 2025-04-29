@@ -7301,8 +7301,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2053257599}
-  - component: {fileID: 2053257598}
   - component: {fileID: 2053257600}
+  - component: {fileID: 2053257601}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -7310,25 +7310,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2053257598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053257597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f425b4689fc9ef49a78c8ce73b34cdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  money: 20
-  scoreText: {fileID: 1046974250}
-  moneyText: {fileID: 1650029930}
-  ballPrefab: {fileID: 4999086322203947618, guid: d3da5dd9d1f6ae04ca9daee500ef7432, type: 3}
-  ballSpawnHeight: {fileID: 1683419378}
-  spawnCooldown: 0.75
 --- !u!4 &2053257599
 Transform:
   m_ObjectHideFlags: 0
@@ -7356,6 +7337,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 722aa83166771184e91fb601551b45ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2053257601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053257597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f425b4689fc9ef49a78c8ce73b34cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  money: 20
+  scoreText: {fileID: 1046974250}
+  moneyText: {fileID: 1650029930}
+  ballPrefab: {fileID: 4999086322203947618, guid: d3da5dd9d1f6ae04ca9daee500ef7432, type: 3}
+  ballSpawnHeight: {fileID: 1683419378}
+  spawnCooldown: 0.75
 --- !u!1 &2128493416
 GameObject:
   m_ObjectHideFlags: 0
