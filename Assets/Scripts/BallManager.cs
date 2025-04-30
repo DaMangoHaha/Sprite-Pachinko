@@ -52,6 +52,7 @@ public class BallManager : MonoBehaviour
             return true;
         }
 
+
         Debug.Log("Not enough money to purchase Red Ball.");
         return false;
     }
