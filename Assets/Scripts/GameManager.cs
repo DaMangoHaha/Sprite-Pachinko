@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static bool shopIsOpen = false;
 
     public int score = 0;
-    public int money = 5;
+    public int money = 20;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI moneyText;
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         score = 0;
-        money = 5;
+        money = 20;
         UpdateUI();
     }
 

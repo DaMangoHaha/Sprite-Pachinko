@@ -352,7 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -396,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 1
+      value: RewardSquare(2, Left)
       objectReference: {fileID: 0}
     - target: {fileID: 4446097473549794704, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Color.b
@@ -1447,11 +1447,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.87
+      value: 3.87
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1491,11 +1491,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495131284177272049, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: moneyValue
-      value: -10
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 1 (1)
+      value: RewardSquare(-5, Right)
       objectReference: {fileID: 0}
     - target: {fileID: 4446097473549794704, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Color.b
@@ -1692,11 +1692,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.14
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1736,7 +1736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 5
+      value: RewardSquare(5, Right)
       objectReference: {fileID: 0}
     - target: {fileID: 4446097473549794704, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Color.b
@@ -3341,11 +3341,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.17
+      value: 8.15
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.1
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3389,7 +3389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 0
+      value: RewardSquare(1, Right)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6080,11 +6080,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6128,7 +6128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare
+      value: RewardSquare(10)
       objectReference: {fileID: 0}
     - target: {fileID: 4446097473549794704, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Color.b
@@ -6504,11 +6504,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.07
+      value: -3.87
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6548,11 +6548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495131284177272049, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: moneyValue
-      value: -10
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 1 (2)
+      value: RewardSquare(-5, Letf)
       objectReference: {fileID: 0}
     - target: {fileID: 4446097473549794704, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Color.b
@@ -6631,11 +6631,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.06
+      value: 5.98
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6679,7 +6679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 1
+      value: RewardSquare(2, Right)
       objectReference: {fileID: 0}
     - target: {fileID: 4446097473549794704, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Color.b
@@ -6881,7 +6881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6921,7 +6921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 5
+      value: RewardSquare(5, Left)
       objectReference: {fileID: 0}
     - target: {fileID: 4446097473549794704, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Color.b
@@ -7204,8 +7204,8 @@ Transform:
   m_GameObject: {fileID: 1980569761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 10, z: 1}
+  m_LocalPosition: {x: -10.62, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.097, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7560,7 +7560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.121
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 31736899733108826, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7604,7 +7604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare 0
+      value: RewardSquare(1, Left)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
