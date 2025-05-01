@@ -33,8 +33,11 @@ public class RewardSquare : MonoBehaviour
             int scoreToAdd = 0;
             switch (moneyValue)
             {
-                case 1:
-                    scoreToAdd = 10;
+                case 2:
+                    scoreToAdd = 20;
+                    break;
+                    case 3:
+                    scoreToAdd = 30;
                     break;
                 case 5:
                     scoreToAdd = 50;
@@ -42,9 +45,9 @@ public class RewardSquare : MonoBehaviour
                 case 10:
                     scoreToAdd = 100;
                     break;
-                case 0:
+                case 1:
                 default:
-                    scoreToAdd = 0;
+                    scoreToAdd = 10;
                     break;
             }
             GameManager.instance.AddScore(scoreToAdd);
@@ -62,20 +65,20 @@ public class RewardSquare : MonoBehaviour
     {
         switch (moneyValue)
         {
-            case 0:
+            case 1:
                 expValue = 1;
                 break;
-            case 1:
+            case 2:
                 expValue = 2;
+                break;
+                case 3:
+                    expValue = 3;
                 break;
             case 5:
                 expValue = 5;
                 break;
             case 10:
                 expValue = 10;
-                break;
-            case -10:
-                expValue = 0;
                 break;
             default:
                 expValue = 0;
