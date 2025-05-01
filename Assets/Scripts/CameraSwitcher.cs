@@ -6,7 +6,7 @@ public class CameraSwitcher : MonoBehaviour
     public Transform shopViewPosition;
     public GameObject shopButton;
     public GameObject backButton;
-    
+
 
 
 
@@ -25,7 +25,7 @@ public class CameraSwitcher : MonoBehaviour
     {
         cam.transform.position = shopViewPosition.position;
         shopButton.SetActive(false);
-        backButton.SetActive(true);    
+        backButton.SetActive(true);
 
         GameManager.shopIsOpen = true;
         Time.timeScale = 0f;
@@ -42,18 +42,16 @@ public class CameraSwitcher : MonoBehaviour
     }
 
     public void EnterShop()
-    { 
+    {
         Time.timeScale = 0f;
 
     }
 
     public void ExitShop()
-    { 
+    {
         Time.timeScale = 1f;
     }
 
 
 
 }
-
-
