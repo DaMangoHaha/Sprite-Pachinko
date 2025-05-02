@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,13 +9,14 @@ public class BallManager : MonoBehaviour
     [Header("Currently Equipped Ball")]
     public EquippedBallData currentBall;
 
-    private bool redBallPurchased = false;
+    [Header("Available Balls")]
+    public EquippedBallData[] allAvailableBalls; // Assign in Inspector
+    public Button[] purchaseButtons; // Match order with allAvailableBalls
 
-    public Button buyRedBallButton;
+    private HashSet<string> purchasedBalls = new HashSet<string>();
 
     private void Awake()
     {
-        // Singleton pattern to ensure only one BallManager exists
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -26,48 +28,40 @@ public class BallManager : MonoBehaviour
         }
     }
 
-    public bool TryPurchaseRedBall(EquippedBallData redBallData, int cost)
+    public void TryPurchaseBall(int ballIndex, int cost)
     {
-        if (redBallPurchased)
+        if (ballIndex < 0 || ballIndex >= allAvailableBalls.Length) return;
+
+        EquippedBallData ballData = allAvailableBalls[ballIndex];
+
+        if (purchasedBalls.Contains(ballData.ballName))
         {
-            Debug.Log("Red Ball already purchased!");
-            return false;
+            Debug.Log($"{ballData.ballName} already purchased!");
+            return;
         }
 
         if (GameManager.instance.money >= cost)
         {
-            // Purchase the Red Ball
             GameManager.instance.money -= cost;
             GameManager.instance.UpdateUI();
 
-            // Equip the new ball
-            currentBall = redBallData;
-            redBallPurchased = true;
+            currentBall = ballData;
+            purchasedBalls.Add(ballData.ballName);
+            Debug.Log($"{ballData.ballName} purchased and equipped!");
 
-            Debug.Log("Red Ball purchased and equipped!");
-
-            // Gray out the purchase button
-            GrayOutPurchaseButton();
-
-            return true;
+            if (purchaseButtons != null && ballIndex < purchaseButtons.Length)
+            {
+                purchaseButtons[ballIndex].interactable = false;
+                ColorBlock colors = purchaseButtons[ballIndex].colors;
+                colors.normalColor = Color.gray;
+                purchaseButtons[ballIndex].colors = colors;
+            }
         }
-
-
-        Debug.Log("Not enough money to purchase Red Ball.");
-        return false;
-    }
-
-    private void GrayOutPurchaseButton()
-    {
-        if (buyRedBallButton != null)
+        else
         {
-            buyRedBallButton.interactable = false; // Disable the button
-            ColorBlock colors = buyRedBallButton.colors;
-            colors.normalColor = Color.gray; // Set color to gray
-            buyRedBallButton.colors = colors;
+            Debug.Log("Not enough money to purchase this ball.");
         }
     }
-    public EquippedBallData[] allAvailableBalls; // Assign in Inspector
 
     public void EquipBallByName(string ballName)
     {
@@ -80,15 +74,6 @@ public class BallManager : MonoBehaviour
             }
         }
     }
-
-}
-
-[System.Serializable]
-public class EquippedBallData
-{
-    public string ballName;
-    public GameObject prefab;
-    public float moneyMultiplier = 1f;
 }
 
 

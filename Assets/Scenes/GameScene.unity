@@ -7094,8 +7094,54 @@ MonoBehaviour:
     ballName: Pachinko Ball
     prefab: {fileID: 4999086322203947618, guid: d3da5dd9d1f6ae04ca9daee500ef7432, type: 3}
     moneyMultiplier: 1
-  buyRedBallButton: {fileID: 0}
-  allAvailableBalls: []
+    expMultiplier: 1
+  allAvailableBalls:
+  - ballName: Red Ball
+    prefab: {fileID: 8300999644657087968, guid: a38e56f79e1173a43a9022c1973488b4, type: 3}
+    moneyMultiplier: 1.2
+    expMultiplier: 1
+  - ballName: Orange Ball
+    prefab: {fileID: 9031399572105978406, guid: a53bbcfbdd4df9f469f8b883256bf750, type: 3}
+    moneyMultiplier: 1.4
+    expMultiplier: 1
+  - ballName: Yellow Ball
+    prefab: {fileID: 7094350748624456473, guid: 3af44bfef4eaa354c984eaca52e99fef, type: 3}
+    moneyMultiplier: 1.6
+    expMultiplier: 1
+  - ballName: Green Ball
+    prefab: {fileID: 8932855815009103555, guid: 61dcef55ca72cfe4883bff37f5139a60, type: 3}
+    moneyMultiplier: 2
+    expMultiplier: 1.5
+  - ballName: Blue Ball
+    prefab: {fileID: 2966089027734074312, guid: 58ed286f04b4ad544a3a6a2b43ab61d8, type: 3}
+    moneyMultiplier: 2.3
+    expMultiplier: 1.7
+  - ballName: Indigo Ball
+    prefab: {fileID: 4605933176992205025, guid: 75a5f23b73652424d93db3bc4176b23f, type: 3}
+    moneyMultiplier: 2.5
+    expMultiplier: 1.9
+  - ballName: Violet Ball
+    prefab: {fileID: 4295906356028280173, guid: 77c750443e383d9409def878b3c96c1c, type: 3}
+    moneyMultiplier: 3
+    expMultiplier: 2
+  - ballName: White Ball
+    prefab: {fileID: 7631135405824036620, guid: 4dab14e2d98152549a2c69d2bbec06f7, type: 3}
+    moneyMultiplier: 3.5
+    expMultiplier: 2.5
+  - ballName: Black Ball
+    prefab: {fileID: 535682742774745009, guid: d753044e7d19997419c3e3a01c8ef691, type: 3}
+    moneyMultiplier: 4
+    expMultiplier: 2
+  purchaseButtons:
+  - {fileID: 70392856}
+  - {fileID: 1283444156}
+  - {fileID: 1140850773}
+  - {fileID: 444012305}
+  - {fileID: 905603331}
+  - {fileID: 1395883968}
+  - {fileID: 1762784887}
+  - {fileID: 163772066}
+  - {fileID: 227897176}
 --- !u!4 &1881550028
 Transform:
   m_ObjectHideFlags: 0
@@ -7898,7 +7944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  money: 5
+  money: 20
   scoreText: {fileID: 1046974250}
   moneyText: {fileID: 1650029930}
   ballPrefab: {fileID: 4999086322203947618, guid: d3da5dd9d1f6ae04ca9daee500ef7432, type: 3}

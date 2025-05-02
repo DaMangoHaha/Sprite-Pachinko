@@ -7,7 +7,7 @@ public class SeasonTimer : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     // Set the season end date here
-    private DateTime seasonEndTime = new DateTime(2025, 5, 7, 23, 59, 0); // May 15, 2025 11:59 PM. In order, it is 2025, May, 15th, 11(hour), 59(minutes), 0(seconds).
+    private DateTime seasonEndTime = new DateTime(2025, 5, 5, 23, 59, 0); // May 15, 2025 11:59 PM. In order, it is 2025, May, 15th, 11(hour), 59(minutes), 0(seconds).
 
     void Update()
     {
