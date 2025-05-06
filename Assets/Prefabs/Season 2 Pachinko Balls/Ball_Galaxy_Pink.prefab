@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6881968233456561319}
   - component: {fileID: 4524873540317440566}
   - component: {fileID: 770463082745606066}
+  - component: {fileID: 5560991806169881935}
   m_Layer: 0
   m_Name: Ball_Galaxy_Pink
   m_TagString: Ball
@@ -184,3 +185,16 @@ MonoBehaviour:
   moneyMultiplier: 2
   expMultiplier: 1.5
   ballPrefab: {fileID: 1919073250067817422}
+--- !u!114 &5560991806169881935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919073250067817422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e794af1f03e0ee942be5b2389661997c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10

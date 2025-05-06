@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2869261808404191057}
   - component: {fileID: 8328781615728198397}
   - component: {fileID: 6584522549135381565}
+  - component: {fileID: -8388439167738540763}
   m_Layer: 0
   m_Name: Ball_Stars
   m_TagString: Ball
@@ -152,3 +153,16 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &-8388439167738540763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072776474476589154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e794af1f03e0ee942be5b2389661997c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10

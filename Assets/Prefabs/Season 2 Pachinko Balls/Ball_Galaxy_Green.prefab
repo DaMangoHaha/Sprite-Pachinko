@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1294354321895156696}
   - component: {fileID: 1279070883238513313}
   - component: {fileID: 2841049171198706613}
+  - component: {fileID: -966964905316612710}
   m_Layer: 0
   m_Name: Ball_Galaxy_Green
   m_TagString: Ball
@@ -184,3 +185,16 @@ MonoBehaviour:
   moneyMultiplier: 2.3
   expMultiplier: 1.7
   ballPrefab: {fileID: 3825859848652579181}
+--- !u!114 &-966964905316612710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3825859848652579181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e794af1f03e0ee942be5b2389661997c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10

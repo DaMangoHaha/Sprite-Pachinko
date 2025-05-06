@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8965694665470042865}
   - component: {fileID: 5940149989791526318}
   - component: {fileID: 2178225396023887400}
+  - component: {fileID: -8451556039254436943}
   m_Layer: 0
   m_Name: Ball_Nebula_Green
   m_TagString: Ball
@@ -184,3 +185,16 @@ MonoBehaviour:
   moneyMultiplier: 1.6
   expMultiplier: 1
   ballPrefab: {fileID: 558866225544342844}
+--- !u!114 &-8451556039254436943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558866225544342844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e794af1f03e0ee942be5b2389661997c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10

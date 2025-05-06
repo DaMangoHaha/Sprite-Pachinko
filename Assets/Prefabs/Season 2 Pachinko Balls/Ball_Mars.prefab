@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6028513519551563637}
   - component: {fileID: 6991061920095144895}
   - component: {fileID: 3573133686909010432}
+  - component: {fileID: 484689751704941351}
   m_Layer: 0
   m_Name: Ball_Mars
   m_TagString: Ball
@@ -184,3 +185,16 @@ MonoBehaviour:
   moneyMultiplier: 2.5
   expMultiplier: 3.5
   ballPrefab: {fileID: 8230826224449203798}
+--- !u!114 &484689751704941351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230826224449203798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e794af1f03e0ee942be5b2389661997c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10

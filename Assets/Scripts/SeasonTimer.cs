@@ -7,7 +7,7 @@ public class SeasonTimer : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     // Set the season end date here
-    private DateTime seasonEndTime = new DateTime(2025, 5, 5, 23, 59, 0); // May 15, 2025 11:59 PM. In order, it is 2025, May, 15th, 11(hour), 59(minutes), 0(seconds).
+    private DateTime seasonEndTime = new DateTime(2025, 5, 15, 23, 59, 0); // May 15, 2025 11:59 PM. In order, it is 2025, May, 15th, 11(hour), 59(minutes), 0(seconds).
 
     void Update()
     {
@@ -25,7 +25,7 @@ public class SeasonTimer : MonoBehaviour
 
     private string FormatTime(TimeSpan time)
     {
-        return string.Format("Season 2: Cosmic Cascade Begins In: {0:D2}d {1:D2}h {2:D2}m {3:D2}s",
+        return string.Format("Season 3: ??? Begins In: {0:D2}d {1:D2}h {2:D2}m {3:D2}s",
             time.Days, time.Hours, time.Minutes, time.Seconds);
     }
 }

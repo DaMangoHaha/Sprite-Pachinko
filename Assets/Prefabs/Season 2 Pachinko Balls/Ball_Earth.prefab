@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6454166908056709185}
   - component: {fileID: 5040402809469829001}
   - component: {fileID: 3523645518866753939}
+  - component: {fileID: 5564819033215157806}
   m_Layer: 0
   m_Name: Ball_Earth
   m_TagString: Ball
@@ -184,3 +185,16 @@ MonoBehaviour:
   moneyMultiplier: 3
   expMultiplier: 2
   ballPrefab: {fileID: 4859987377512527616}
+--- !u!114 &5564819033215157806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4859987377512527616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e794af1f03e0ee942be5b2389661997c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10

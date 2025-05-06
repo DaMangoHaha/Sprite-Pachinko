@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2501183611470787999}
   - component: {fileID: 6291534388100382110}
   - component: {fileID: 3148553190722613973}
+  - component: {fileID: 2206982540441940719}
   m_Layer: 0
   m_Name: Ball_Jupiter
   m_TagString: Ball
@@ -184,3 +185,16 @@ MonoBehaviour:
   moneyMultiplier: 4
   expMultiplier: 3
   ballPrefab: {fileID: 6719628318904338226}
+--- !u!114 &2206982540441940719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6719628318904338226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e794af1f03e0ee942be5b2389661997c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10
