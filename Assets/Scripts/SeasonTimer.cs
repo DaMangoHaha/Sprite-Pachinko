@@ -25,7 +25,7 @@ public class SeasonTimer : MonoBehaviour
 
     private string FormatTime(TimeSpan time)
     {
-        return string.Format("Season 3: ??? Begins In: {0:D2}d {1:D2}h {2:D2}m {3:D2}s",
+        return string.Format("Season 2 ??? Begins In: {0:D2}d {1:D2}h {2:D2}m {3:D2}s",
             time.Days, time.Hours, time.Minutes, time.Seconds);
     }
 }
