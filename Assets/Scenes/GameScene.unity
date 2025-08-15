@@ -3363,7 +3363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Name
-      value: RewardSquare(3, Letf)
+      value: RewardSquare(3, Left)
       objectReference: {fileID: 0}
     - target: {fileID: 4191081140668668749, guid: fb779f2447f30dd44b50158204f192e4, type: 3}
       propertyPath: m_Layer
@@ -4362,6 +4362,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6443039068094363526, guid: 5e3326c69a3c1b24eab9134bea3c6de7, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4455,6 +4459,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7994147849859187248, guid: a4e84d7213cfd4c4b974f7046a1ba9d7, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     - target: {fileID: 8298554470831069802, guid: a4e84d7213cfd4c4b974f7046a1ba9d7, type: 3}
       propertyPath: m_Name
       value: Green Nebula
@@ -4564,6 +4572,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5504287298575998843, guid: 77315ef7acb3884479f4beacc6a7ae30, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4669,6 +4681,10 @@ PrefabInstance:
       propertyPath: ballData
       value: 
       objectReference: {fileID: 1998721674}
+    - target: {fileID: 4514458397784270793, guid: b269bf6b89743744ca44d845bf9074cd, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     - target: {fileID: 4590103352696248413, guid: b269bf6b89743744ca44d845bf9074cd, type: 3}
       propertyPath: ballName
       value: Blue Nebula Ball
@@ -4778,6 +4794,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6082653156566707522, guid: 38d864837760ab24e8a39ed329c0f49e, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4791,6 +4811,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453983691}
     m_Modifications:
+    - target: {fileID: 3240317116915033410, guid: 4b5a0dd893ee2714a90319740e3e91f5, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     - target: {fileID: 7192321086139998002, guid: 4b5a0dd893ee2714a90319740e3e91f5, type: 3}
       propertyPath: m_Name
       value: Earth Ball
@@ -4972,6 +4996,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4554246386569265351, guid: 542a116fc6dd8f44385ba26c54829441, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     - target: {fileID: 4871114335403803655, guid: 542a116fc6dd8f44385ba26c54829441, type: 3}
       propertyPath: m_Name
       value: Purple Galaxy
@@ -4993,6 +5021,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453983691}
     m_Modifications:
+    - target: {fileID: 2222906950294480014, guid: d056a13f41147874ca47d80bb574d7ff, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     - target: {fileID: 2594050454979662396, guid: d056a13f41147874ca47d80bb574d7ff, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5174,6 +5206,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5327368954159209079, guid: ff8dc9d4cf9fd3b43b1837b037cd54da, type: 3}
+      propertyPath: purchaseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 06107695504d4e447a333c7d53fa970c, type: 3}
     - target: {fileID: 5773138694332150132, guid: ff8dc9d4cf9fd3b43b1837b037cd54da, type: 3}
       propertyPath: m_Name
       value: Green Galaxy
